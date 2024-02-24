@@ -2,8 +2,10 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Dynamic-collection-showcase</title>
+  <title>Dynamic-scrolling-product-text-with-image</title>
   <style>
+    @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
     @import 'https://unpkg.com/open-props' layer(design.system);
 
 @import 'https://unpkg.com/open-props/normalize.dark.min.css'
@@ -20,7 +22,7 @@ https://github.com/mobalti/layout-craft/blob/main/lib/utilities.css
 
 @layer base.normalize-overrides {
   :root {
-    font-family: 'Futura', sans-serif;
+    font-family: Raleway, sans-serif;
     --surface-1: black;
     --surface-2: oklch(0.19 0 0);
     --surface-3: #f1dadf;
@@ -66,23 +68,23 @@ https://github.com/mobalti/layout-craft/blob/main/lib/utilities.css
     block-size: var(--nav-block-size);
     z-index: var(--layer-3);
 
-    background-color: hsl(0 0% 0%/ 0.1);
+    background-color: white;
 
     backdrop-filter: blur(28px);
 
     > a {
-      background: var(--gradient-21);
+      background: white;
 
       color: white;
       border-radius: var(--radius-round);
       padding: var(--size-2) var(--size-4);
       text-decoration: none;
       font-weight: var(--font-weight-6);
-      box-shadow: var(--shadow-2);
+      box-shadow: white;
     }
 
     @media (width >= 1024px) {
-      background-color: var(--surface-1);
+      background-color: white;
       font-size: 14px;
       position: sticky;
       inset-block-start: 0;
@@ -160,7 +162,7 @@ https://github.com/mobalti/layout-craft/blob/main/lib/utilities.css
     }
 
     .subhead {
-      color: var(--brand-1);
+      color:  #FF5722;
       font-size: var(--font-size-6);
       font-weight: var(--font-weight-6);
       max-inline-size: var(--size-content-1);
@@ -322,6 +324,7 @@ https://github.com/mobalti/layout-craft/blob/main/lib/utilities.css
     position: fixed;
     inset-block-end: var(--size-8);
     z-index: var(--layer-3);
+    color:  #FF5722;
 
     & a {
       --size: var(--size-3);
@@ -375,7 +378,7 @@ https://github.com/mobalti/layout-craft/blob/main/lib/utilities.css
 
 @keyframes highlight {
   50% {
-    background-color: hsl(347, 100%, 58%);
+    background-color:  #FF5722;
   }
 }
   </style>
@@ -383,6 +386,9 @@ https://github.com/mobalti/layout-craft/blob/main/lib/utilities.css
 </head>
 <body>
 <body class="block-center-center">
+  <nav class="Nav block-center-center">
+      <a ="/">  </a>
+    </nav>
     <main class="inline content-full">
       <section class="Hero inline gap-2">
         <div class="Wrapper block content-3">
